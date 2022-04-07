@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{165B3998-BD8A-4580-8464-0CF507A771B4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EditPhotometricStereo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\lib\eigen9.0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <StackReserveSize>
+      </StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;C:\extra\VTK 8.9\Debug\bin;C:\extra\VTK 8.9\Debug\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\opencv\build\x64\vc15\lib;C:\extra\VTK 8.9\Debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world452d.lib;opencv_world452.lib;vtkChartsCore-8.90d.lib;vtkCommonColor-8.90d.lib;vtkCommonComputationalGeometry-8.90d.lib;vtkCommonCore-8.90d.lib;vtkCommonDataModel-8.90d.lib;vtkCommonExecutionModel-8.90d.lib;vtkCommonMath-8.90d.lib;vtkCommonMisc-8.90d.lib;vtkCommonSystem-8.90d.lib;vtkCommonTransforms-8.90d.lib;vtkDICOMParser-8.90d.lib;vtkDomainsChemistry-8.90d.lib;vtkdoubleconversion-8.90d.lib;vtkexodusII-8.90d.lib;vtkexpat-8.90d.lib;vtkFiltersAMR-8.90d.lib;vtkFiltersCore-8.90d.lib;vtkFiltersExtraction-8.90d.lib;vtkFiltersFlowPaths-8.90d.lib;vtkFiltersGeneral-8.90d.lib;vtkFiltersGeneric-8.90d.lib;vtkFiltersGeometry-8.90d.lib;vtkFiltersHybrid-8.90d.lib;vtkFiltersHyperTree-8.90d.lib;vtkFiltersImaging-8.90d.lib;vtkFiltersModeling-8.90d.lib;vtkFiltersParallel-8.90d.lib;vtkFiltersParallelImaging-8.90d.lib;vtkFiltersPoints-8.90d.lib;vtkFiltersProgrammable-8.90d.lib;vtkFiltersSelection-8.90d.lib;vtkFiltersSMP-8.90d.lib;vtkFiltersSources-8.90d.lib;vtkFiltersStatistics-8.90d.lib;vtkFiltersTexture-8.90d.lib;vtkFiltersTopology-8.90d.lib;vtkFiltersVerdict-8.90d.lib;vtkfreetype-8.90d.lib;vtkGeovisCore-8.90d.lib;vtkgl2ps-8.90d.lib;vtkglew-8.90d.lib;vtkhdf5-8.90d.lib;vtkhdf5_hl-8.90d.lib;vtkImagingColor-8.90d.lib;vtkImagingCore-8.90d.lib;vtkImagingFourier-8.90d.lib;vtkImagingGeneral-8.90d.lib;vtkImagingHybrid-8.90d.lib;vtkImagingMath-8.90d.lib;vtkImagingMorphological-8.90d.lib;vtkImagingSources-8.90d.lib;vtkImagingStatistics-8.90d.lib;vtkImagingStencil-8.90d.lib;vtkInfovisCore-8.90d.lib;vtkInfovisLayout-8.90d.lib;vtkInteractionImage-8.90d.lib;vtkInteractionStyle-8.90d.lib;vtkInteractionWidgets-8.90d.lib;vtkIOAMR-8.90d.lib;vtkIOAsynchronous-8.90d.lib;vtkIOCityGML-8.90d.lib;vtkIOCore-8.90d.lib;vtkIOEnSight-8.90d.lib;vtkIOExodus-8.90d.lib;vtkIOExport-8.90d.lib;vtkIOExportGL2PS-8.90d.lib;vtkIOExportPDF-8.90d.lib;vtkIOGeometry-8.90d.lib;vtkIOImage-8.90d.lib;vtkIOImport-8.90d.lib;vtkIOInfovis-8.90d.lib;vtkIOLegacy-8.90d.lib;vtkIOLSDyna-8.90d.lib;vtkIOMINC-8.90d.lib;vtkIOMotionFX-8.90d.lib;vtkIOMovie-8.90d.lib;vtkIONetCDF-8.90d.lib;vtkIOOggTheora-8.90d.lib;vtkIOParallel-8.90d.lib;vtkIOParallelXML-8.90d.lib;vtkIOPLY-8.90d.lib;vtkIOSegY-8.90d.lib;vtkIOSQL-8.90d.lib;vtkIOTecplotTable-8.90d.lib;vtkIOVeraOut-8.90d.lib;vtkIOVideo-8.90d.lib;vtkIOXML-8.90d.lib;vtkIOXMLParser-8.90d.lib;vtkjpeg-8.90d.lib;vtkjsoncpp-8.90d.lib;vtklibharu-8.90d.lib;vtklibproj-8.90d.lib;vtklibxml2-8.90d.lib;vtkloguru-8.90d.lib;vtklz4-8.90d.lib;vtklzma-8.90d.lib;vtkmetaio-8.90d.lib;vtknetcdf-8.90d.lib;vtkogg-8.90d.lib;vtkParallelCore-8.90d.lib;vtkpng-8.90d.lib;vtkpugixml-8.90d.lib;vtkRenderingAnnotation-8.90d.lib;vtkRenderingContext2D-8.90d.lib;vtkRenderingContextOpenGL2-8.90d.lib;vtkRenderingCore-8.90d.lib;vtkRenderingFreeType-8.90d.lib;vtkRenderingGL2PSOpenGL2-8.90d.lib;vtkRenderingImage-8.90d.lib;vtkRenderingLabel-8.90d.lib;vtkRenderingLOD-8.90d.lib;vtkRenderingOpenGL2-8.90d.lib;vtkRenderingParallel-8.90d.lib;vtkRenderingVolume-8.90d.lib;vtkRenderingVolumeOpenGL2-8.90d.lib;vtksqlite-8.90d.lib;vtksys-8.90d.lib;vtkTestingRendering-8.90d.lib;vtktheora-8.90d.lib;vtktiff-8.90d.lib;vtkverdict-8.90d.lib;vtkViewsContext2D-8.90d.lib;vtkViewsCore-8.90d.lib;vtkViewsInfovis-8.90d.lib;vtkWrappingTools-8.90d.lib;vtkzlib-8.90d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="EditPhotometricStereo.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
